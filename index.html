@@ -1,0 +1,84 @@
+<html>
+
+    <head>
+        <style>
+            #applet {
+                height: 620px;
+                width: 600px;
+                border:1px solid #000000;
+                background-color: whitesmoke;
+            }
+
+            .infoBox {
+                height: 135px;
+                width: 550px;
+                border: 1px solid lightblue;
+                left: 25px;
+                margin-top: 5px;
+                position: relative;
+            }
+            
+            #valueInputBox {
+                margin-left: 25px;           
+            }
+            #performanceSummary {
+                margin-left: 25px;  
+            }
+            #performanceDetails {
+                margin-left: 25px;  
+            }
+            #testCaseHistory {
+                margin-left: 25px;  
+            }
+            .triangleInput {
+                width: 25px;
+                margin-right: 50px;
+            }
+            #reset {
+                position: relative;
+                top: 15px;
+                left: 275px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+    <div id="applet">
+        <div class="infoBox">
+            <div id="valueInputBox">
+                <h4>Enter Your Test Values</h4>
+                <label style="margin-right: 50px;">Enter triangle sides:</label>
+                <input class="triangleInput" id="side1">
+                <input class="triangleInput" id="side2">
+                <input class="triangleInput" id="side3">
+                <button id="classify">Classify</button>
+            </div>            
+        </div>
+        <div class="infoBox">
+            <div id="performanceSummary">
+                <h4>Your Performance Summary</h4>
+                <label>Code Coverage: </label> <br>
+                
+                <label>Bugs Found: </label>
+                
+            </div>            
+        </div>
+        <div class="infoBox" >
+            <div id="performanceDetails">
+                <h4>Your Performance Details</h4>
+                
+            </div>            
+        </div>
+        <div class="infoBox" >
+            <div id="testCaseHistory">
+                <h4>Your Test Case History</h4>           
+                <textarea cols="68" rows="4"> </textarea>
+            </div>            
+        </div>
+        <button id="reset">Reset</button>
+    </div>
+
+    </body>
+
+</html>
